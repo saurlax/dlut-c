@@ -8,57 +8,57 @@
 
 int main()
 {
-	int year, month, day, maxDay, vaild = 1;
+  int year, month, day, maxDay, vaild = 1;
 
-	while (1)
-	{
-		printf("Enter date (year month day): ");
-		scanf("%d%d%d", &year, &month, &day);
-		if (year < 0)
-		{
-			puts("Year should be positive");
-			vaild = 0;
-		}
-		if (month < 0 || month > 12)
-		{
-			puts("Month should be in 1~12");
-			vaild = 0;
-		}
-		if (month == 2)
-		{
-			if ((year % 4 == 0 && year & 100 != 0) || year % 400 == 0)
-			{
-				maxDay = 29;
-			}
-			else
-			{
-				maxDay = 28;
-			}
-		}
-		else
-		{
-			switch (month)
-			{
-			case 4:
-			case 6:
-			case 9:
-			case 11:
-				maxDay = 30;
-				break;
-			default:
-				maxDay = 31;
-				break;
-			}
-		}
-		if (day < 0 || day > maxDay)
-		{
-			printf("Day should be in 1~%d\n", maxDay);
-			vaild = 0;
-		}
-		if (vaild)
-		{
-			puts("Correct date");
-		}
-	}
-	return 0;
+  while (1)
+  {
+    printf("Enter date (year month day): ");
+    scanf("%d%d%d", &year, &month, &day);
+    if (year < 0)
+    {
+      puts("Year should be positive");
+      vaild = 0;
+    }
+    if (month < 0 || month > 12)
+    {
+      puts("Month should be in 1~12");
+      vaild = 0;
+    }
+    if (month == 2)
+    {
+      if ((year % 4 == 0 && year & 100 != 0) || year % 400 == 0)
+      {
+        maxDay = 29;
+      }
+      else
+      {
+        maxDay = 28;
+      }
+    }
+    else
+    {
+      switch (month)
+      {
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+        maxDay = 30;
+        break;
+      default:
+        maxDay = 31;
+        break;
+      }
+    }
+    if (day < 0 || day > maxDay)
+    {
+      printf("Day should be in 1~%d\n", maxDay);
+      vaild = 0;
+    }
+    if (vaild)
+    {
+      puts("Correct date");
+    }
+  }
+  return 0;
 }

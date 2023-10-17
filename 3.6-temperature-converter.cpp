@@ -27,24 +27,24 @@
 
 void Temperatures(double input)
 {
-	const double f = input;
-	const double c = 5.0 / 9.0 * (f - 32.0);
-	const double k = c + 273.16;
-	printf("%.2lf F, %.2lf C, %.2lf K\n", f, c, k);
+  const double f = input;
+  const double c = 5.0 / 9.0 * (f - 32.0);
+  const double k = c + 273.16;
+  printf("%.2lf F, %.2lf C, %.2lf K\n", f, c, k);
 }
 
 int main()
 {
-	double f;
-	while (1)
-	{
-		printf("Please enter a fahrenheit temperature: ");
-		if (scanf("%lf", &f) < 1)
-		{
-			break;
-		}
-		Temperatures(f);
-	}
-	printf("bye");
-	return 0;
+  double f;
+  while (1)
+  {
+    printf("Please enter a fahrenheit temperature: ");
+    if (scanf("%lf", &f) < 1)
+    {
+      break;
+    }
+    Temperatures(f);
+  }
+  printf("bye");
+  return 0;
 }

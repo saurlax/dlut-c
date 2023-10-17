@@ -13,38 +13,38 @@ int count1 = 0, count2 = 0;
 
 int main()
 {
-	printf("Please enter something:\n");
+  printf("Please enter something:\n");
 
-	char c;
-	while ((c = getchar()) != '#')
-	{
-		str1[len1++] = c;
-	}
+  char c;
+  while ((c = getchar()) != '#')
+  {
+    str1[len1++] = c;
+  }
 
-	for (int i = 0; i < len1; i++)
-	{
-		if (str1[i] == '!')
-		{
-			str2[len2++] = '!';
-			str2[len2++] = '!';
-			count2++;
-		}
-		else
-		{
-			str2[len2++] = str1[i];
-		}
-	}
+  for (int i = 0; i < len1; i++)
+  {
+    if (str1[i] == '!')
+    {
+      str2[len2++] = '!';
+      str2[len2++] = '!';
+      count2++;
+    }
+    else
+    {
+      str2[len2++] = str1[i];
+    }
+  }
 
-	for (int i = 0; i < len1; i++)
-	{
-		if (str1[i] == '.')
-		{
-			str1[i] = '!';
-			count2++;
-		}
-	}
+  for (int i = 0; i < len1; i++)
+  {
+    if (str1[i] == '.')
+    {
+      str1[i] = '!';
+      count2++;
+    }
+  }
 
-	printf("Converted '.' to '!' %d times\nConverted '!' to '!!' %d times\n", count1, count2);
-	printf("Here's result:\n%s", str2);
-	return 0;
+  printf("Converted '.' to '!' %d times\nConverted '!' to '!!' %d times\n", count1, count2);
+  printf("Here's result:\n%s", str2);
+  return 0;
 }

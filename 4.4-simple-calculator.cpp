@@ -9,34 +9,34 @@
 
 int main()
 {
-	double a, b;
-	char op;
+  double a, b;
+  char op;
 
-	while (1)
-	{
-		scanf("%lf %c %lf", &a, &op, &b);
-		switch (op)
-		{
-		case '+':
-			printf("%lf\n", a + b);
-			break;
-		case '-':
-			printf("%lf\n", a - b);
-			break;
-		case '*':
-			printf("%lf\n", a * b);
-			break;
-		case '/':
-			if (b == 0)
-			{
-				printf("error\n");
-			}
-			else
-			{
-				printf("%lf\n", a / b);
-			}
-			break;
-		}
-	}
-	return 0;
+  while (1)
+  {
+    scanf("%lf %c %lf", &a, &op, &b);
+    switch (op)
+    {
+    case '+':
+      printf("%lf\n", a + b);
+      break;
+    case '-':
+      printf("%lf\n", a - b);
+      break;
+    case '*':
+      printf("%lf\n", a * b);
+      break;
+    case '/':
+      if (b == 0)
+      {
+        printf("error\n");
+      }
+      else
+      {
+        printf("%lf\n", a / b);
+      }
+      break;
+    }
+  }
+  return 0;
 }

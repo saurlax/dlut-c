@@ -11,16 +11,16 @@ const int MINS_PRE_HOUR = 60;
 
 int main()
 {
-	int time;
-	printf("Input a time in minutes and I can convert it to time in hours and minutes for u:\n");
-	while (1)
-	{
-		scanf("%d", &time);
-		if (time <= 0)
-		{
-			break;
-		}
-		printf("%d:%02d\n", time / MINS_PRE_HOUR, time % MINS_PRE_HOUR);
-	}
-	return 0;
+  int time;
+  printf("Input a time in minutes and I can convert it to time in hours and minutes for u:\n");
+  while (1)
+  {
+    scanf("%d", &time);
+    if (time <= 0)
+    {
+      break;
+    }
+    printf("%d:%02d\n", time / MINS_PRE_HOUR, time % MINS_PRE_HOUR);
+  }
+  return 0;
 }

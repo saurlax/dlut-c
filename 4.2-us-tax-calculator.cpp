@@ -20,54 +20,54 @@
 
 int main()
 {
-	int type, step;
-	double income, tax;
+  int type, step;
+  double income, tax;
 
-	while (1)
-	{
-		printf(
-				"0: Exit\n"
-				"1: Single\n"
-				"2: Head of Household\n"
-				"3: Married, Joint\n"
-				"4: Married, Sqparate\n"
-				"Please choose your tax type: ");
-		scanf("%d", &type);
-		if (type < 1)
-		{
-			break;
-		}
-		if (type > 4)
-		{
-			printf("Invaild type!\n");
-			continue;
-		}
-		printf("Please tell me your income: ");
-		scanf("%lf", &income);
-		switch (type)
-		{
-		case 1:
-			step = 17850;
-			break;
-		case 2:
-			step = 23900;
-			break;
-		case 3:
-			step = 29750;
-			break;
-		case 4:
-			step = 14875;
-			break;
-		}
-		if (income > step)
-		{
-			tax = 0.15 * step + 0.28 * (income - step);
-		}
-		else
-		{
-			tax = 0.15 * income;
-		}
-		printf("Here's your tax: $%.2lf\n", tax);
-	}
-	return 0;
+  while (1)
+  {
+    printf(
+        "0: Exit\n"
+        "1: Single\n"
+        "2: Head of Household\n"
+        "3: Married, Joint\n"
+        "4: Married, Sqparate\n"
+        "Please choose your tax type: ");
+    scanf("%d", &type);
+    if (type < 1)
+    {
+      break;
+    }
+    if (type > 4)
+    {
+      printf("Invaild type!\n");
+      continue;
+    }
+    printf("Please tell me your income: ");
+    scanf("%lf", &income);
+    switch (type)
+    {
+    case 1:
+      step = 17850;
+      break;
+    case 2:
+      step = 23900;
+      break;
+    case 3:
+      step = 29750;
+      break;
+    case 4:
+      step = 14875;
+      break;
+    }
+    if (income > step)
+    {
+      tax = 0.15 * step + 0.28 * (income - step);
+    }
+    else
+    {
+      tax = 0.15 * income;
+    }
+    printf("Here's your tax: $%.2lf\n", tax);
+  }
+  return 0;
 }

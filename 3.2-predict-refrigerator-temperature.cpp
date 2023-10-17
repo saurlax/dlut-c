@@ -11,16 +11,16 @@
 
 int main()
 {
-	int hour, min;
-	double time, temp;
-	printf("Please enter the time elapsed since the power off: ");
-	scanf("%d:%d", &hour, &min);
-	time = hour + min / 60.0;
-	temp = 4 * time * time / (time + 2) - 20;
-	if (temp > 18)
-	{
-		temp = 18;
-	}
-	printf("The current temperature of the refrigerator is %.2lf", temp);
-	return 0;
+  int hour, min;
+  double time, temp;
+  printf("Please enter the time elapsed since the power off: ");
+  scanf("%d:%d", &hour, &min);
+  time = hour + min / 60.0;
+  temp = 4 * time * time / (time + 2) - 20;
+  if (temp > 18)
+  {
+    temp = 18;
+  }
+  printf("The current temperature of the refrigerator is %.2lf", temp);
+  return 0;
 }

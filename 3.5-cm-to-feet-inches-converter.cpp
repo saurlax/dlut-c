@@ -19,28 +19,28 @@ int feet, show;
 
 int main()
 {
-	while (1)
-	{
-		if (show)
-		{
-			printf("Enter a height in centimeters (<=0 to quit): ");
-		}
-		else
-		{
-			printf("Enter a height in centimeters: ");
-		}
-		scanf("%lf", &cm);
-		if (cm <= 0)
-		{
-			break;
-		}
+  while (1)
+  {
+    if (show)
+    {
+      printf("Enter a height in centimeters (<=0 to quit): ");
+    }
+    else
+    {
+      printf("Enter a height in centimeters: ");
+    }
+    scanf("%lf", &cm);
+    if (cm <= 0)
+    {
+      break;
+    }
 
-		inch = cm / 2.54;
-		feet = inch / 12;
-		inch = (int)inch % 12 + inch - (int)inch;
-		printf("%.1lf cm = %d feet, %.1lf inches\n", cm, feet, inch);
-		show = 1;
-	}
-	printf("bye\n");
-	return 0;
+    inch = cm / 2.54;
+    feet = inch / 12;
+    inch = (int)inch % 12 + inch - (int)inch;
+    printf("%.1lf cm = %d feet, %.1lf inches\n", cm, feet, inch);
+    show = 1;
+  }
+  printf("bye\n");
+  return 0;
 }

@@ -6,22 +6,22 @@
 
 int main()
 {
-	char c = getchar();
-	if (c >= '0' && c <= '9')
-	{
-		puts("number");
-	}
-	else if (c >= 'A' && c <= 'Z')
-	{
-		puts("capital letter");
-	}
-	else if (c >= 'a' && c <= 'z')
-	{
-		puts("lowercase letter");
-	}
-	else
-	{
-		puts("other");
-	}
-	return 0;
+  char c = getchar();
+  if (c >= '0' && c <= '9')
+  {
+    puts("number");
+  }
+  else if (c >= 'A' && c <= 'Z')
+  {
+    puts("capital letter");
+  }
+  else if (c >= 'a' && c <= 'z')
+  {
+    puts("lowercase letter");
+  }
+  else
+  {
+    puts("other");
+  }
+  return 0;
 }

@@ -18,11 +18,11 @@ double dist, gas;
 
 int main()
 {
-	printf("Please enter distance traveled (mil) and gas consumed (gal): ");
-	scanf("%lf%lf", &dist, &gas);
-	printf("Unit gas consumption (us std.): %.1lf mil/gal\n", dist / gas);
-	dist *= mil2km;
-	gas *= gal2l;
-	printf("Unit gas consumption (eu std.): %.1lf L/100km\n", 100 * gas / dist);
-	return 0;
+  printf("Please enter distance traveled (mil) and gas consumed (gal): ");
+  scanf("%lf%lf", &dist, &gas);
+  printf("Unit gas consumption (us std.): %.1lf mil/gal\n", dist / gas);
+  dist *= mil2km;
+  gas *= gal2l;
+  printf("Unit gas consumption (eu std.): %.1lf L/100km\n", 100 * gas / dist);
+  return 0;
 }

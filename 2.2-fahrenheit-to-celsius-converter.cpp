@@ -7,9 +7,9 @@
 
 int main()
 {
-	double temp;
-	printf("please enter a fahrenheit temperature (F): ");
-	scanf("%lf", &temp);
-	printf("result in celsius temperature (C) is: %.4lf", 5 * (temp - 32) / 9);
-	return 0;
+  double temp;
+  printf("please enter a fahrenheit temperature (F): ");
+  scanf("%lf", &temp);
+  printf("result in celsius temperature (C) is: %.4lf", 5 * (temp - 32) / 9);
+  return 0;
 }
