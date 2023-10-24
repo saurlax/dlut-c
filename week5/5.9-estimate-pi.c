@@ -10,13 +10,13 @@ int main()
   int n = 1;
   double pi = 2;
   double lastPi = 0;
-  while (pi - lastPi > 1e-14)
+  while (pi - lastPi > 1e-12)
   {
     lastPi = pi;
-    // don't directly use (2*n*2*n)/(2n-1)*(2n+1) bacause it may less than 1
-    pi *= (double)4 * n * n / (2 * n - 1) / (2 * n + 1);
+    // don't directly use (2*n*2*n)/((2*n-1)*(2*n+1)) bacause it may less than 1
+    pi *= 4.0 * n * n / (2 * n - 1) / (2 * n + 1);
     n++;
   }
-  printf("pi=%.7lf\n", pi);
+  printf("pi=%.6lf\n", pi);
   return 0;
 }
