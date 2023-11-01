@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * 输出 n 到 m 内的所有素数，并统计素数的个数。
  */
 #include <stdio.h>

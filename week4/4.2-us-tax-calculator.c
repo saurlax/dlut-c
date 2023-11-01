@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * The 1988 United States Federal Tax Schedule was the simplest in recent times. lt had
  * four categories, and each category had two rates. Here is a summary (dollar amounts are
  * taxable income):

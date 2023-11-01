@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * Output the following asterisk pyramid
  *                    row#    Blanks  Asterisks
  *      *             0       5       1

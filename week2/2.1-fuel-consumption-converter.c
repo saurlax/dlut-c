@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * Write a program that asks the user to enter the number of miles traveled and the number
  * of gallons of gasoline consumed. It should then calculate and display the miles-per-gallon
  * value, showing one place to the right of the decimal. Next, using the fact that one gallon

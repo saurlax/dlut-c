@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * Write a program that requests the user to enter a Fahrenheit temperature. The program
  * should read the temperature as a type double number and pass it as an argument to
  * a user-supplied function called Temperatures(). This function should calculate the

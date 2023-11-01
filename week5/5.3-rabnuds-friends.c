@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * Professor Rabnud joined a social media group. Initially he had five friends. He noticed
  * that his friend count grew in the following fashion. The first week one friend dropped
  * out and the remaining number of friends doubled. The second week two friends dropped

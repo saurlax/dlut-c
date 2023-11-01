@@ -1,5 +1,4 @@
-/**
- * @author Saurlax
+/**  
  * Daphne invests $100 at 10% simple interest. (That is, every year, the investment earns
  * an interest equal to 10% of the original investment.) Deirdre invests $100 at 5% interest
  * compounded annually. (That is, interest is 5% of the current balance, including previous
