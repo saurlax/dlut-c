@@ -8,3 +8,4 @@
 - [week4](./week4/)：选择结构
 - [week5](./week5/)：循环
 - [week6](./week6/)：函数
+- [week7](./week7/)：数组
