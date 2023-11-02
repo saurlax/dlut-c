@@ -21,8 +21,19 @@ int main()
   } while (getchar() != '\n');
 
   int i = 0, j = 0;
-  while (i < alen && j < blen)
+  while (i < alen || j < blen)
   {
+    if (i == alen)
+    {
+      puts("b++ (a full)");
+      c[clen++] = b[j++];
+      continue;
+    }
+    if (j == blen)
+    {
+      c[clen++] = a[i++];
+      continue;
+    }
     if (a[i] < b[j])
     {
       c[clen++] = a[i++];
