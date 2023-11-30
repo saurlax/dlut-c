@@ -16,34 +16,51 @@ struct Point
 
 struct Node
 {
-  struct Point data;
+  struct Point point;
   struct Node *next;
 };
 
-struct Node *appendNode(struct Node *head, struct Point data)
+struct Node *createNode(struct Point point)
 {
   struct Node *node = (struct Node *)malloc(sizeof(struct Node));
-  node->data = data;
+  node->point = point;
   node->next = NULL;
-  struct Node *p = head;
-  while (p->next != NULL)
-    p = p->next;
-  p->next = node;
   return node;
 }
 
 int main()
 {
-  struct Node head = {{1, 2}, NULL};
-  appendNode(&head, (struct Point){2, 3});
-  appendNode(&head, (struct Point){3, 4});
-  appendNode(&head, (struct Point){1, 4});
-  puts("All nodes:");
-  for (struct Node *p = &head; p != NULL; p = p->next)
-    printf("[%d,%d]\n", p->data.x, p->data.y);
-  puts("All nodes where x+y=5:");
-  for (struct Node *p = &head; p != NULL; p = p->next)
-    if (p->data.x + p->data.y == 5)
-      printf("[%d,%d]\n", p->data.x, p->data.y);
+  struct Node *p;
+  struct Point point1 = {1, 2};
+  struct Point point2 = {2, 3};
+  struct Point point3 = {3, 4};
+  struct Point point4 = {1, 4};
+
+  struct Node *head = createNode(point1);
+  struct Node *node2 = createNode(point2);
+  struct Node *node3 = createNode(point3);
+  struct Node *node4 = createNode(point4);
+
+  head->next = node2;
+  node2->next = node3;
+  node3->next = node4;
+
+  p = head;
+  puts("All points:");
+  while (p != NULL)
+  {
+    printf("[%d, %d]\n", p->point.x, p->point.y);
+    p = p->next;
+  }
+  puts("All points where x + y = 5:");
+  p = head;
+  while (p != NULL)
+  {
+    if (p->point.x + p->point.y == 5)
+    {
+      printf("[%d, %d]\n", p->point.x, p->point.y);
+    }
+    p = p->next;
+  }
   return 0;
 }

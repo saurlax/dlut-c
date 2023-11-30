@@ -7,9 +7,9 @@
  *   outputPoints(p,3);
  * }
  * 输出：
- * [0,0]
- * [1,1]
- * [2,2]
+ * [0, 0]
+ * [1, 1]
+ * [2, 2]
  * 练习结构体的声明、变量定义、结构体数组、结构体作为函数参数
  */
 #include <stdio.h>
@@ -22,7 +22,7 @@ struct Point
 
 void outputPoint(struct Point p)
 {
-  printf("[%d,%d]\n", p.x, p.y);
+  printf("[%d, %d]\n", p.x, p.y);
 }
 
 void outputPoints(struct Point p[], int n)
